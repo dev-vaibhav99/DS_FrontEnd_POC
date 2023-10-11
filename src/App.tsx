@@ -4,11 +4,12 @@ import './App.css';
 import IncomeDetailsList from "./components/IncomeDetailsList";
 import IncomeDetailsById from "./components/IncomeDetailsById";
 import ExpenseDetailsList from "./components/ExpenseDetailsList";
+import ExpenseDetailsById from "./components/ExpenseDetailsById";
 
 function App() {
   return (
     <div className="App">
-      <ExpenseDetailsList />
+      <ExpenseDetailsById />
     </div>
   );
 }
