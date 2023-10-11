@@ -9,6 +9,7 @@ import ExpenseDetailsList from "./components/ExpenseDetailsList";
 import ExpenseDetailsById from "./components/ExpenseDetailsById";
 import AddRevenueCategoryComponent from "./components/AddRevenueCategoryComponent";
 import UpdateRevenueCategoryComponent from "./components/UpdateRevenueCategoryComponent";
+import AddIncomeDetailsComponent from "./components/AddIncomeDetailsComponent";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
             path="addRevenueCategory"
             Component={AddRevenueCategoryComponent}
           ></Route>
+          <Route path="payment" Component={AddIncomeDetailsComponent}></Route>
         </Routes>
       </Router>
     </div>
