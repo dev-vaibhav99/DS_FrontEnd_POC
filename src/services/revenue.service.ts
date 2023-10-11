@@ -1,45 +1,11 @@
 import axios from "axios";
+import { CourseFees } from "../models/CourseFees";
+import { AddRevenueCategory } from "../models/AddRevenueCategory";
+import { RevenueCategory } from "../models/RevenueCategory";
+import { OtherIncome } from "../models/OtherIncome";
+import { OtherExpense } from "../models/OtherExpense";
 
 const BASE_URL = "http://localhost:3000/api/v1/revenue";
-
-interface RevenueCategory {
-  id: number;
-  name: string;
-  // Add other properties here
-}
-
-interface AddRevenueCategory {
-  name: string;
-}
-
-interface CourseFees {
-  userId: number;
-  studentId: number;
-  revenueCategoryId: number;
-  amount: number;
-  totalFees: number;
-  paidFees: number;
-  balanceFees: number;
-}
-
-interface OtherIncome {
-  userId: number;
-  revenueCategoryId: number;
-  amount: number;
-}
-
-interface MentorSalaryExpense {
-  revenueCategoryId: number;
-  amount: number;
-  mentorId: number;
-  remark: string;
-}
-
-interface OtherExpense {
-  revenueCategoryId: number;
-  amount: number;
-  remark: string;
-}
 
 const apiService = {
   getAllRevenueCategories: (): Promise<any> => axios.get(`${BASE_URL}/`),
