@@ -45,7 +45,7 @@ const apiService = {
   getAllRevenueCategories: (): Promise<any> => axios.get(`${BASE_URL}/`),
 
   getRevenueCategoryById: (id: number): Promise<any> =>
-    axios.get(`${BASE_URL}/${id}`),
+    axios.get(`${BASE_URL}/category/${id}`),
 
   createRevenueCategory: (
     revenueCategoryData: AddRevenueCategory
