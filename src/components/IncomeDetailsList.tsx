@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import apiService from "../services/revenue.service";
 
-interface Item {
+interface IncomeDetails {
   income_id: number;
   student_id: number;
   total_fees: number;
@@ -13,27 +13,27 @@ interface Item {
   revenue_category_id: number;
 }
 
-const RevenueListComponent: React.FC = () => {
-  const [items, setItems] = useState<Item[]>([]);
+const IncomeDetailsList: React.FC = () => {
+  const [incomeDetails, setIncomeDetails] = useState<IncomeDetails[]>([]);
 
   useEffect(() => {
     // Fetch items from the API when the component mounts
     apiService.getAllIncomeDetails().then((data) => {
       console.log(data.data);
-      setItems(data.data);
+      setIncomeDetails(data.data);
     });
   }, []);
 
   return (
     <div>
-      <h1>Income details</h1>
+      <h1>All Income details</h1>
       <ul>
-        {items.map((item) => (
-          <li key={item.income_id}>{JSON.stringify(item)}</li>
+        {incomeDetails.map((incomeDetail) => (
+          <li key={incomeDetail.income_id}>{JSON.stringify(incomeDetail)}</li>
         ))}
       </ul>
     </div>
   );
 };
 
-export default RevenueListComponent;
+export default IncomeDetailsList;
