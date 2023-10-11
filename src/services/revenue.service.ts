@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:3000/api/v1/revenue";
 
-interface Item {
+interface RevenueCategory {
   id: number;
   name: string;
   // Add other properties here
@@ -57,7 +57,7 @@ const apiService = {
 
   updateRevenueCategory: (
     id: number,
-    revenueCategoryData: Item
+    revenueCategoryData: RevenueCategory
   ): Promise<any> => axios.put(`${BASE_URL}/update/${id}`, revenueCategoryData),
 
   deleteRevenueCategoryById: (id: number): Promise<any> =>
