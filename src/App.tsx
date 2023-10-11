@@ -5,11 +5,12 @@ import IncomeDetailsList from "./components/IncomeDetailsList";
 import IncomeDetailsById from "./components/IncomeDetailsById";
 import ExpenseDetailsList from "./components/ExpenseDetailsList";
 import ExpenseDetailsById from "./components/ExpenseDetailsById";
+import AddRevenueCategoryComponent from "./components/AddRevenueCategoryComponent";
 
 const App = () => {
   return (
     <div className="App">
-      <ExpenseDetailsById />
+      <AddRevenueCategoryComponent />
     </div>
   );
 };
