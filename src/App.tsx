@@ -19,6 +19,18 @@ const App = () => {
             path="updateRevenueCategory/:id"
             Component={UpdateRevenueCategoryComponent}
           ></Route>
+          <Route path="incomeDetails" Component={IncomeDetailsList}></Route>
+          <Route path="expenseDetails" Component={ExpenseDetailsList}></Route>
+
+          <Route path="incomeDetails/:id" Component={IncomeDetailsById}></Route>
+          <Route
+            path="expenseDetails/:id"
+            Component={ExpenseDetailsById}
+          ></Route>
+          <Route
+            path="addRevenueCategory"
+            Component={AddRevenueCategoryComponent}
+          ></Route>
         </Routes>
       </Router>
     </div>
