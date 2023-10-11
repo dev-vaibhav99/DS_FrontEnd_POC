@@ -8,6 +8,10 @@ interface Item {
   // Add other properties here
 }
 
+interface AddRevenueCategory {
+  name: string;
+}
+
 interface CourseFees {
   userId: number;
   studentId: number;
@@ -43,8 +47,13 @@ const apiService = {
   getRevenueCategoryById: (id: number): Promise<any> =>
     axios.get(`${BASE_URL}/${id}`),
 
-  createRevenueCategory: (revenueCategoryData: Item): Promise<any> =>
-    axios.post(`${BASE_URL}/add`, revenueCategoryData),
+  createRevenueCategory: (
+    revenueCategoryData: AddRevenueCategory
+  ): Promise<any> =>
+    axios
+      .post(`${BASE_URL}/add`, revenueCategoryData)
+      .then((response) => console.log(response))
+      .catch((error) => console.error(error)),
 
   updateRevenueCategory: (
     id: number,
