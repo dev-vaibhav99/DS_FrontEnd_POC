@@ -11,7 +11,7 @@ const BASE_URL = "http://localhost:3000/api/v1/revenue";
 const apiService = {
   getAllRevenueCategories: (): Promise<any> => axios.get(`${BASE_URL}/`),
 
-  getRevenueCategoryById: (id: number): Promise<any> =>
+  getRevenueCategoryById: (id: string): Promise<any> =>
     axios.get(`${BASE_URL}/category/${id}`),
 
   createRevenueCategory: (
@@ -23,11 +23,11 @@ const apiService = {
       .catch((error) => console.error(error)),
 
   updateRevenueCategory: (
-    id: number,
+    id: string,
     revenueCategoryData: RevenueCategory
   ): Promise<any> => axios.put(`${BASE_URL}/update/${id}`, revenueCategoryData),
 
-  deleteRevenueCategoryById: (id: number): Promise<any> =>
+  deleteRevenueCategoryById: (id: string): Promise<any> =>
     axios.delete(`${BASE_URL}/delete/${id}`),
 
   addCourseFeesIncomeDetails: (incomeDetails: CourseFees): Promise<any> =>
@@ -38,7 +38,7 @@ const apiService = {
 
   getAllIncomeDetails: (): Promise<any> => axios.get(`${BASE_URL}/income`),
 
-  getIncomeDetailsById: (id: number): Promise<any> =>
+  getIncomeDetailsById: (id: string): Promise<any> =>
     axios.get(`${BASE_URL}/income/${id}`),
 
   addMentorFeesExpense: (expenseDetails: MentorSalaryExpense): Promise<any> =>
@@ -49,7 +49,7 @@ const apiService = {
 
   getAllExpenseDetails: (): Promise<any> => axios.get(`${BASE_URL}/expenses`),
 
-  getExpenseDetailsById: (id: number): Promise<any> =>
+  getExpenseDetailsById: (id: string): Promise<any> =>
     axios.get(`${BASE_URL}/expense/${id}`),
 };
 
