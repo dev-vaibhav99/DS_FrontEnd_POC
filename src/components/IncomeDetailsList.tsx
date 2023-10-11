@@ -29,7 +29,7 @@ const IncomeDetailsList: React.FC = () => {
       <h1>All Income details</h1>
       <ul>
         {incomeDetails.map((incomeDetail) => (
-          <li key={incomeDetail.income_id}>{JSON.stringify(incomeDetail)}</li>
+          <li key={incomeDetail.incomeId}>{JSON.stringify(incomeDetail)}</li>
         ))}
       </ul>
     </div>
