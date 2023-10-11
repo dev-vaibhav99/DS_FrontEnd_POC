@@ -20,13 +20,13 @@ const UpdateRevenueCategoryComponent: React.FC = () => {
     // Fetch the existing category data from the API based on the ID
     setIsLoading(true);
     revenueService
-      .getRevenueCategoryById(parseInt(String(id)))
+      .getRevenueCategoryById(String(id))
       .then((response) => {
         setCategoryName(response.data.name);
         setIsLoading(false);
       })
       .catch((error) => {
-        console.error("API Error:", error);
+        console.error("API Error:", error.response.data);
         setIsLoading(false);
       });
   }, [id]);
@@ -47,10 +47,7 @@ const UpdateRevenueCategoryComponent: React.FC = () => {
     };
     try {
       // Send the updated category data to the API
-      revenueService.updateRevenueCategory(
-        parseInt(String(id)),
-        revenueCategory
-      );
+      revenueService.updateRevenueCategory(String(id), revenueCategory);
       // Handle successful update, e.g., redirect to a different page
     } catch (error) {
       console.error("API Error:", error);
