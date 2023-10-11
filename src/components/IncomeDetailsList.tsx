@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import apiService from "../services/revenue.service";
 
 interface IncomeDetails {
-  income_id: number;
-  student_id: number;
-  total_fees: number;
-  balance_fees: number;
-  paid_fees: number;
-  transaction_id: number;
+  incomeId: number;
+  studentId: number;
+  totalFees: number;
+  balanceFees: number;
+  paidFees: number;
+  transactionId: number;
   amount: number;
-  user_id: number;
-  revenue_category_id: number;
+  userId: number;
+  revenueCategoryId: number;
 }
 
 const IncomeDetailsList: React.FC = () => {
