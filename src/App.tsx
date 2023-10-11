@@ -6,12 +6,12 @@ import IncomeDetailsById from "./components/IncomeDetailsById";
 import ExpenseDetailsList from "./components/ExpenseDetailsList";
 import ExpenseDetailsById from "./components/ExpenseDetailsById";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <ExpenseDetailsById />
     </div>
   );
-}
+};
 
 export default App;
