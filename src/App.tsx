@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import RevenueListComponent from "./components/RevenueListComponent";
+import IncomeDetailsList from "./components/IncomeDetailsList";
 
 function App() {
   return (
     <div className="App">
-      <RevenueListComponent />
+      <IncomeDetailsList />
     </div>
   );
 }
