@@ -1,7 +1,7 @@
 // AddIncomeDetailsComponent.tsx
 import React, { useState, useEffect } from "react";
-import { CourseFees } from "../models/CourseFees";
-import revenueService from "../services/revenue.service";
+import { CourseFees } from "../../../models/CourseFees";
+import revenueService from "../../../services/revenue.service";
 
 const AddIncomeDetailsComponent: React.FC = () => {
   const [formData, setFormData] = useState<CourseFees>({

@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import logo from "./logo.svg";
 import "./App.css";
-import IncomeDetailsList from "./components/IncomeDetailsList";
-import IncomeDetailsById from "./components/IncomeDetailsById";
-import ExpenseDetailsList from "./components/ExpenseDetailsList";
-import ExpenseDetailsById from "./components/ExpenseDetailsById";
-import AddRevenueCategoryComponent from "./components/AddRevenueCategoryComponent";
-import UpdateRevenueCategoryComponent from "./components/UpdateRevenueCategoryComponent";
-import AddIncomeDetailsComponent from "./components/AddIncomeDetailsComponent";
+import IncomeDetailsList from "./components/RevenueComponents/Income/IncomeDetailsList";
+import IncomeDetailsById from "./components/RevenueComponents/Income/IncomeDetailsById";
+import ExpenseDetailsList from "./components/RevenueComponents/Expense/ExpenseDetailsList";
+import ExpenseDetailsById from "./components/RevenueComponents/Expense/ExpenseDetailsById";
+import AddRevenueCategoryComponent from "./components/RevenueComponents/RevenueCategory/AddRevenueCategoryComponent";
+import UpdateRevenueCategoryComponent from "./components/RevenueComponents/RevenueCategory/UpdateRevenueCategoryComponent";
+import AddIncomeDetailsComponent from "./components/RevenueComponents/Income/AddIncomeDetailsComponent";
 
 const App = () => {
   return (

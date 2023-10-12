@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from "react";
-import revenueService from "../services/revenue.service";
+import revenueService from "../../../services/revenue.service";
 
 interface AddRevenueCategory {
   name: string;
