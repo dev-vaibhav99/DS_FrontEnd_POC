@@ -11,6 +11,7 @@ import AddRevenueCategoryComponent from "./components/RevenueComponents/RevenueC
 import UpdateRevenueCategoryComponent from "./components/RevenueComponents/RevenueCategory/UpdateRevenueCategoryComponent";
 import AddIncomeDetailsComponent from "./components/RevenueComponents/Income/AddIncomeDetailsComponent";
 import AddMentorExpenseDetailsComponent from "./components/RevenueComponents/Expense/AddMentorExpenseDetailsComponent";
+import AddOtherExpenseDetailsComponent from "./components/RevenueComponents/Expense/AddOtherExpenseDetailsComponent";
 
 const App = () => {
   return (
@@ -37,6 +38,10 @@ const App = () => {
           <Route
             path="mentorSalary"
             Component={AddMentorExpenseDetailsComponent}
+          ></Route>
+          <Route
+            path="otherExpense"
+            Component={AddOtherExpenseDetailsComponent}
           ></Route>
         </Routes>
       </Router>
