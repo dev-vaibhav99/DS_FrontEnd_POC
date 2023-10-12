@@ -1,10 +1,10 @@
 import axios from "axios";
-import { CourseFees } from "../models/CourseFees";
-import { AddRevenueCategory } from "../models/AddRevenueCategory";
-import { RevenueCategory } from "../models/RevenueCategory";
-import { OtherIncome } from "../models/OtherIncome";
-import { OtherExpense } from "../models/OtherExpense";
-import { MentorSalaryExpense } from "../models/MentorSalaryExpense";
+import { CourseFees } from "../../models/CourseFees";
+import { AddRevenueCategory } from "../../models/AddRevenueCategory";
+import { RevenueCategory } from "../../models/RevenueCategory";
+import { OtherIncome } from "../../models/OtherIncome";
+import { OtherExpense } from "../../models/OtherExpense";
+import { MentorSalaryExpense } from "../../models/MentorSalaryExpense";
 
 const BASE_URL = "http://localhost:3000/api/v1/revenue";
 

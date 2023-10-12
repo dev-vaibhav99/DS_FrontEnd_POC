@@ -1,6 +1,6 @@
 import React, { useState, useEffect, FormEvent } from "react";
 import { useParams } from "react-router-dom"; // Assuming you're using React Router
-import revenueService from "../../../services/revenue.service";
+import revenueService from "../../../services/RevenueService/revenue.service";
 
 // interface RouteParams {
 //   id: string;

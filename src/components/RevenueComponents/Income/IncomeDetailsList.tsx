@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import apiService from "../../../services/revenue.service";
+import apiService from "../../../services/RevenueService/revenue.service";
 
 interface IncomeDetails {
   incomeId: number;
